@@ -61,8 +61,11 @@ public class Avion
     public int leerDinero(){
         int acum = 0;
         for(int i =0; i<sillas.length;i++){
-            for(int j = 0; i<sillas[i].length;i++){
+            for(int j = 0; j<sillas[i].length;j++){
+                if(sillas[i][j]==null) continue;
+                else{
                 acum+=sillas[i][j].getPrecioTiquete();
+                }
             }
         }
         return acum;

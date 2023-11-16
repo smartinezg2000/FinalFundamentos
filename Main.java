@@ -11,19 +11,24 @@ public class Main
         
         //creacion menú e invocacion metodos
         Scanner input = new Scanner(System.in);
-        System.out.println("A. Nombre del archivo con la estructura del avion.");
-        System.out.println("B. Nombre del pasajero, fila, y columna, precio del tiquete y tal vez edad");
-        System.out.println("C. Dinero recaudado hoy");
-        System.out.println("D. Lista de pasajeros");
-        System.out.println("E. Edad promedio de los pasajeros(elegir un nuevo atributo o dejar ese si maria quiere)");
-        System.out.println("F. Termina programa.");
-        String s = input.nextLine();
-        s = s.toUpperCase();
-        while(s!="F"){
+    
         
+        String s="a";
+        
+        
+        while(!s.equals("F")){
+                System.out.println("A. Nombre del archivo con la estructura del avion.");
+                System.out.println("B. Nombre del pasajero, fila, y columna, precio del tiquete y tal vez edad");
+                System.out.println("C. Dinero recaudado hoy");
+                System.out.println("D. Lista de pasajeros");
+                System.out.println("E. Edad promedio de los pasajeros(elegir un nuevo atributo o dejar ese si maria quiere)");
+                System.out.println("F. Termina programa.");
+               s = input.nextLine().toUpperCase();
+            
             if(s.equals("A")){
                 System.out.println("Escribe el nombre del archivo");
-                avion.leerEstructura(input.nextLine());
+                String archivo = input.nextLine();
+                avion.leerEstructura(archivo);
                 
                 
             }
