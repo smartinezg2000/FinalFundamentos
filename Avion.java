@@ -70,6 +70,17 @@ public class Avion
         }
         return acum;
     }
+    public void imprimirEstructura(){
+        
+        for(int i =0; i<sillas.length;i++){
+            for(int j = 0; j<sillas[i].length;j++){
+                if(sillas[i][j]==null) System.out.print("-");
+                else System.out.print("+");
+            }
+            System.out.println();
+        }
+        
+    }
 
 
 }

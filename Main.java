@@ -4,7 +4,8 @@ public class Main
 {
     
     
-    public static void main(String [] args){   //Creacion avion
+    public static void main(String [] args){  
+        //Creacion avion
         Avion avion = new Avion();
         
         
@@ -23,6 +24,7 @@ public class Main
                 System.out.println("D. Lista de pasajeros");
                 System.out.println("E. Edad promedio de los pasajeros(elegir un nuevo atributo o dejar ese si maria quiere)");
                 System.out.println("F. Termina programa.");
+                
                s = input.nextLine().toUpperCase();
             
             if(s.equals("A")){
@@ -30,7 +32,7 @@ public class Main
                 String archivo = input.nextLine();
                 avion.leerEstructura(archivo);
                 
-                
+                System.out.println();
             }
             else if(s.equals("B")){
                 System.out.println("Escribe el nombre del pasajero");
@@ -49,17 +51,22 @@ public class Main
                 avion.agregarPasajero(pasajero);
                 
                 
-                
+                System.out.println();
             }
             else if(s.equals("C")){
                 System.out.println("El dinero recaudado es : " + avion.leerDinero());
-                
+                System.out.println();
             }
             else if(s.equals("D")){
                 
             }
             else if(s.equals("E")){
                 
+            }
+            else if(s.equals("G")){
+                System.out.println("G. Imprimir mapa avion.");
+                avion.imprimirEstructura();
+                System.out.println();
             }
             
         }

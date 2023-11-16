@@ -6,4 +6,6 @@ comment2.params=pasajero
 comment2.target=boolean\ agregarPasajero(Pasajero)
 comment3.params=
 comment3.target=int\ leerDinero()
-numComments=4
+comment4.params=
+comment4.target=void\ imprimirEstructura()
+numComments=5
