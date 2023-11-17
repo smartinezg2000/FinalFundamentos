@@ -1,17 +1,19 @@
 #BlueJ class context
 comment0.target=Pasajero
-comment1.params=nombre\ precioTiquete\ fila\ columna
-comment1.target=Pasajero(java.lang.String,\ int,\ int,\ int)
+comment1.params=nombre\ precioTiquete\ edad\ fila\ columna
+comment1.target=Pasajero(java.lang.String,\ int,\ int,\ int,\ int)
 comment2.params=
 comment2.target=java.lang.String\ getNombre()
-comment3.params=
-comment3.target=int\ getPrecioTiquete()
-comment4.params=nombre
-comment4.target=void\ setNombre(java.lang.String)
+comment3.params=nombre
+comment3.target=void\ setNombre(java.lang.String)
+comment4.params=
+comment4.target=int\ getPrecioTiquete()
 comment5.params=precioTiquete
 comment5.target=void\ setPrecioTiquete(int)
 comment6.params=
 comment6.target=int\ getColumna()
 comment7.params=
 comment7.target=int\ getFila()
-numComments=8
+comment8.params=
+comment8.target=int\ getEdad()
+numComments=9

@@ -6,25 +6,27 @@ public class Pasajero
     private int precioTiquete;
     private int fila;
     private int columna;
-    //private int edad;
+    private int edad;
 
-    public Pasajero(String nombre, int precioTiquete, int fila, int columna)
+    public Pasajero(String nombre, int precioTiquete,int edad, int fila, int columna)
     {
         this.nombre=nombre;
         this.precioTiquete=precioTiquete;
         this.columna = columna;
         this.fila = fila;
+        this.edad = edad;
         
     }
     public String getNombre(){
         return nombre;
     }
-    public int getPrecioTiquete(){
-        return precioTiquete;
-    }
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
+    public int getPrecioTiquete(){
+        return precioTiquete;
+    }
+    
      public void setPrecioTiquete(int precioTiquete){
         this.precioTiquete=precioTiquete;
     }   
@@ -34,6 +36,9 @@ public class Pasajero
 
     public int getFila(){
         return fila;
+    }
+    public int getEdad(){
+        return edad;
     }
     
 }

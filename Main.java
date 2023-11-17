@@ -19,7 +19,7 @@ public class Main
         
         while(!s.equals("F")){
                 System.out.println("A. Nombre del archivo con la estructura del avion.");
-                System.out.println("B. Nombre del pasajero, fila, y columna, precio del tiquete y tal vez edad");
+                System.out.println("B. Ingresar pasajero");
                 System.out.println("C. Dinero recaudado hoy");
                 System.out.println("D. Lista de pasajeros");
                 System.out.println("E. Edad promedio de los pasajeros(elegir un nuevo atributo o dejar ese si maria quiere)");
@@ -38,6 +38,9 @@ public class Main
                 System.out.println("Escribe el nombre del pasajero");
                 String nombre = input.nextLine();
                 
+                System.out.println("Edad");
+                int edad = input.nextInt();
+                
                 System.out.println("Escribe el precio en enteros");
                 int precioTiquete = input.nextInt();
                 
@@ -47,20 +50,24 @@ public class Main
                 System.out.println("la columna");
                 int columna = input.nextInt();
                 
-                Pasajero pasajero = new Pasajero( nombre,  precioTiquete,  fila,  columna);
+                
+                
+                Pasajero pasajero = new Pasajero( nombre,  precioTiquete,edad,  fila,  columna);
                 avion.agregarPasajero(pasajero);
                 
-                
+                input.nextLine();
                 System.out.println();
             }
             else if(s.equals("C")){
-                System.out.println("El dinero recaudado es : " + avion.leerDinero());
+                System.out.print("El dinero recaudado es : " + avion.leerDinero());
                 System.out.println();
             }
             else if(s.equals("D")){
+                avion.imprimirNombres();
                 
             }
             else if(s.equals("E")){
+                System.out.print("La edad promedio de los pasajeros es: " + avion.calcularEdadPromedio());
                 
             }
             else if(s.equals("G")){

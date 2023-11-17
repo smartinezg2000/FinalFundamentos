@@ -81,6 +81,35 @@ public class Avion
         }
         
     }
-
+    public void imprimirNombres(){
+        
+        for(int i =0; i<sillas.length;i++){
+            for(int j = 0; j<sillas[i].length;j++){
+                if(sillas[i][j]==null) continue;
+                else System.out.println(sillas[i][j].getNombre());
+            }
+            System.out.println();
+        }
+        
+    }
+    public int calcularEdadPromedio(){
+        
+        int cont =0;
+        int acum = 0;
+        
+        for(int i =0; i<sillas.length;i++){
+            for(int j = 0; j<sillas[i].length;j++){
+                if(sillas[i][j]==null) continue;
+                else {
+                    acum+=sillas[i][j].getEdad();
+                    cont++;
+                }
+            }
+            System.out.println();
+        }
+        
+        int ans = acum/cont;
+        return ans;
+    }
 
 }
