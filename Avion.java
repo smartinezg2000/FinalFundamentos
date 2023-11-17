@@ -88,7 +88,6 @@ public class Avion
                 if(sillas[i][j]==null) continue;
                 else System.out.println(sillas[i][j].getNombre());
             }
-            System.out.println();
         }
         
     }
@@ -105,7 +104,7 @@ public class Avion
                     cont++;
                 }
             }
-            System.out.println();
+            
         }
         
         int ans = acum/cont;
